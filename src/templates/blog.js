@@ -14,8 +14,8 @@ const Blog = ({ data }) => {
 
 export default Blog
 export const pageQuery = graphql`
-  query ($id: String!) {
-    markdownRemark(id: {eq: $id}) {
+  query {
+    markdownRemark {
       frontmatter {
         author
         date(fromNow: false)
