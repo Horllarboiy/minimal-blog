@@ -13,7 +13,7 @@ module.exports = {
     title: `SnapFeed`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@Olamide`,
-    siteUrl: `/`,
+    siteUrl: `https://gatsby.com`,
   },
   plugins: [
     "gatsby-plugin-postcss",
@@ -25,8 +25,16 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `post`,
+        path: `${__dirname}/src/post`,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -38,7 +46,8 @@ module.exports = {
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/icons.png`, 
+        // This path is relative to the root of the site.
       },
     },
   ],
