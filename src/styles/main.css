@@ -5,15 +5,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --main-bg-color: #1D1616;
-    --main-text-color: #FFFDEC;
-    --scrollBar: #0B192C;
+  --primary-color: #333;
+  --primary-bg: #e4e4e4;
 }
 
-.main-text-color {
-    color: var(--main-text-color);
+@media (prefers-color-scheme : dark) {
+   :root {
+       --primary-color: #ece7e1;
+       --primary-bg: #121212;
+   }
 }
-
 .raleway{
     font-family: "Raleway", serif;
     font-optical-sizing: auto;
@@ -34,6 +35,8 @@
 
 body {
         font-family: "Work Sans",'Raleway', sans-serif;
+        background-color: var(--primary-bg);
+        color: var(--primary-color);
     }
 
     @keyframes slide-in {

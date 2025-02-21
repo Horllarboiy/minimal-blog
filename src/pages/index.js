@@ -20,7 +20,7 @@ const Index = ({ data }) => {
         <div className="w-4/6 relative">
           <div className="md:fixed block">
             <h1 className="font-bold ml-7 md:ml-0 text-2xl md:text-xl">BuzzIt</h1>
-            <blockquote className="w-72 text-gray-400 text-sm hidden my-4 md:flex italic">
+            <blockquote className="w-72 text-sm hidden my-4 md:flex italic">
               Minimalism is not a style, it is an attitude, a way of being. It’s
               a fundamental reaction against noise, visual noise, disorder,
               vulgarity. Minimalism is the pursuit of the essence of things, not
